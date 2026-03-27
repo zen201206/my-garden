@@ -1,13 +1,29 @@
 body {
     /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+      九色鹿 LOGO 放大與美化設定
+    ***/
+
+    /* 1. 讓 Logo 圖片變大 (建議 100px - 150px) */
+    .site-logo {
+        max-height: 120px !important; 
+        width: auto !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* 2. 讓「北區學務股」這幾個字變大且加粗 */
+    .site-name-header {
+        font-size: 32px !important; 
+        font-weight: 800 !important;
+        display: block !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+    }
+
+    /* 3. 調整整體排版，讓圖片與文字像範例一樣垂直排列並置中 */
+    .site-nav-logo-wrapper {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 30px 0 !important;
+        display: flex !important;
+    }
 }
