@@ -1,23 +1,15 @@
-/* 先把背景紅色的測試碼刪掉，然後貼上這段 */
-
-/* 強制為所有層級的嵌套清單加上左邊框 */
+/* 精修版：讓縮排線與 Obsidian 視覺一致 */
 .dg-content ul ul, 
-.dg-content ol ol, 
 .dg-content ul ol, 
-.dg-content ol ul,
-.markdown-rendered ul ul,
-.markdown-rendered ol ol {
-    border-left: 2px solid #E0E0E0 !important; /* 線條顏色：淺灰色 */
-    margin-left: 1.2rem !important;           /* 縮排距離 */
-    padding-left: 1.0rem !important;          /* 文字與線的間隔 */
-    list-style-type: disc !important;         /* 確保圓點還在 */
-    display: block !important;
+.dg-content ol ul, 
+.dg-content ol ol {
+    border-left: 1px solid #e0e0e0 !important; /* 線條改細一點，更像筆記感 */
+    margin-left: 0.5rem !important;            /* 減少外部間距，讓線往左移 */
+    padding-left: 1.2rem !important;           /* 調整線與文字的距離 */
+    list-style-type: disc !important;
 }
 
-/* 針對行動版網頁微調，確保線條不會太擠 */
-@media screen and (max-width: 768px) {
-    .dg-content ul ul {
-        margin-left: 0.8rem !important;
-        padding-left: 0.8rem !important;
-    }
+/* 確保第一層清單不要被影響到 */
+.dg-content > ul, .dg-content > ol {
+    margin-left: 0rem !important;
 }
