@@ -3,7 +3,7 @@
 .dg-content ul ol, 
 .dg-content ol ul, 
 .dg-content ol ol {
-    border-left: 1px solid #e0e0e0 !important; /* 線條改細一點，更像筆記感 */
+    border-left: 2px solid #e0e0e0 !important; /* 線條改細一點，更像筆記感 */
     margin-left: 0.5rem !important;            /* 減少外部間距，讓線往左移 */
     padding-left: 1.2rem !important;           /* 調整線與文字的距離 */
     list-style-type: disc !important;
