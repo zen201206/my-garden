@@ -8,7 +8,7 @@
 .markdown-rendered ul ul,
 .markdown-rendered ol ol {
     border-left: 2px solid #E0E0E0 !important; /* 線條顏色：淺灰色 */
-    margin-left: -0.2rem !important;           /* 縮排距離 */
+    margin-left: -0.5rem !important;           /* 縮排距離 */
     padding-left: 0.2rem !important;          /* 文字與線的間隔 */
     list-style-type: disc !important;         /* 確保圓點還在 */
     display: block !important;
