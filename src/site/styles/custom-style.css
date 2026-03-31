@@ -1,0 +1,15 @@
+/* 幫第二層（含）以後的清單加上左側垂直線 */
+.dg-content ul ul, 
+.dg-content ul ol, 
+.dg-content ol ul, 
+.dg-content ol ol {
+    border-left: 1.5px solid #E0E0E0; /* 線條顏色：淺灰色 */
+    margin-left: 1.0rem;             /* 設定線條與上一層的距離 */
+    padding-left: 1.0rem;            /* 設定線條與文字之間的間隔 */
+    list-style-type: disc;           /* 確保圓點維持顯示 */
+}
+
+/* 讓線條在滑鼠指到時稍微變深（選配，增加質感） */
+.dg-content ul ul:hover {
+    border-left-color: #BDBDBD;
+}
