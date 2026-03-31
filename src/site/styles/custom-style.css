@@ -1,15 +1,23 @@
-/* 幫第二層（含）以後的清單加上左側垂直線 */
+/* 先把背景紅色的測試碼刪掉，然後貼上這段 */
+
+/* 強制為所有層級的嵌套清單加上左邊框 */
 .dg-content ul ul, 
+.dg-content ol ol, 
 .dg-content ul ol, 
-.dg-content ol ul, 
-.dg-content ol ol {
-    border-left: 1.5px solid #E0E0E0; /* 線條顏色：淺灰色 */
-    margin-left: 1.0rem;             /* 設定線條與上一層的距離 */
-    padding-left: 1.0rem;            /* 設定線條與文字之間的間隔 */
-    list-style-type: disc;           /* 確保圓點維持顯示 */
+.dg-content ol ul,
+.markdown-rendered ul ul,
+.markdown-rendered ol ol {
+    border-left: 2px solid #E0E0E0 !important; /* 線條顏色：淺灰色 */
+    margin-left: 1.2rem !important;           /* 縮排距離 */
+    padding-left: 1.0rem !important;          /* 文字與線的間隔 */
+    list-style-type: disc !important;         /* 確保圓點還在 */
+    display: block !important;
 }
 
-/* 讓線條在滑鼠指到時稍微變深（選配，增加質感） */
-.dg-content ul ul:hover {
-    border-left-color: #BDBDBD;
+/* 針對行動版網頁微調，確保線條不會太擠 */
+@media screen and (max-width: 768px) {
+    .dg-content ul ul {
+        margin-left: 0.8rem !important;
+        padding-left: 0.8rem !important;
+    }
 }
